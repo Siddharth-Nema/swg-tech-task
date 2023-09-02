@@ -1,0 +1,221 @@
+.header img {
+  height: 100px;
+}
+
+body {
+  margin: 8px 0 0 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+}
+
+footer {
+  margin-top: auto;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 16px;
+}
+
+.divider {
+  background-color: black;
+  padding: 3px;
+}
+
+.divider button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  height: 35px;
+  width: 70px;
+}
+
+.title {
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.links img {
+  height: 50px;
+  width: 150px;
+  padding: 10px;
+}
+
+.form {
+  margin: 8px 0;
+  padding: 8px 350px 8px 150px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.table {
+  text-align: center;
+}
+.submit-button {
+  background-color: #3498db;
+  margin: 30px;
+  color: white;
+  padding: 12px 30px;
+  width: 300px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid #2980b9;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+  border-color: #3498db;
+  transform: scale(1.05);
+}
+
+.submit {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.form-group input:valid {
+  border-color: #2ecc71;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+select option[disabled] {
+  color: #999;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+#form-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group input[type='checkbox'] {
+  height: 25px;
+}
+
+@media only screen and (max-width: 835px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .header img {
+    height: 40px;
+  }
+
+  .form {
+    padding: 8px;
+  }
+}
